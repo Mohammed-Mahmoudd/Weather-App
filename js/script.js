@@ -143,7 +143,7 @@ function oldTheme() {
       body.style.background = "url(./images/DarkBackground.png)";
       body.style.backgroundSize = "cover";
       localStorage.setItem("Mode", mode);
-      themecontrol.checked = localStorage.getItem("check");
+      themecontrol.checked = true;
       return mode;
     case "light":
       body.style.transition = "2s";
@@ -152,7 +152,7 @@ function oldTheme() {
       body.style.background = "url(./images/background.jpg)";
       body.style.backgroundSize = "cover";
       localStorage.setItem("Mode", mode);
-      themecontrol.checked = localStorage.getItem("check");
+      themecontrol.checked = false;
 
       return mode;
     default:
