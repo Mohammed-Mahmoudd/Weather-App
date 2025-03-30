@@ -152,7 +152,7 @@ function oldTheme() {
       body.style.background = "url(./images/background.jpg)";
       body.style.backgroundSize = "cover";
       localStorage.setItem("Mode", mode);
-      themecontrol.checked = false;
+      themecontrol.checked = localStorage.getItem("check");
 
       return mode;
     default:
