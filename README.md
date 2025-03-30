@@ -14,7 +14,7 @@ A sleek and interactive weather application that fetches real-time weather data 
 
 ## Usage
 1. Open the application in a web browser.
-2. Enter a city name in the search bar and press enter.
+2. Enter a city name in the search bar and click on the search button.
 3. View real-time weather details including temperature, humidity, and wind speed.
 
 ## Screenshots
