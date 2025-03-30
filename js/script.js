@@ -92,27 +92,34 @@ function displayData(data) {
 function theme() {
   let themecontrol = document.getElementById("themecontrol");
   let body = document.querySelector("body");
-  mode = "dark";
-
-  console.log(themecontrol.checked);
   if (themecontrol.checked) {
     mode = "dark";
+    localStorage.setItem("Mode", mode);
   } else {
     mode = "light";
+    localStorage.setItem("Mode", mode);
   }
+  mode = localStorage.getItem("Mode");
 
   switch (mode) {
     case "dark":
       body.style.transition = "1s";
+
       body.style.transitionDelay = "0.1s";
       body.style.background = "url(./images/DarkBackground.png)";
       body.style.backgroundSize = "cover";
+      localStorage.setItem("Mode", mode);
+      localStorage.setItem("check", themecontrol.checked);
       break;
     case "light":
       body.style.transition = "2s";
+
       body.style.transitionDelay = "0.1s";
       body.style.background = "url(./images/background.jpg)";
       body.style.backgroundSize = "cover";
+      localStorage.setItem("Mode", mode);
+      localStorage.setItem("check", themecontrol.checked);
+
       break;
     default:
       body.style.background = "url(./images/background.jpg)";
@@ -121,3 +128,39 @@ function theme() {
       break;
   }
 }
+
+function oldTheme() {
+  let Mode = localStorage.getItem("Mode");
+  let body = document.querySelector("body");
+  let themecontrol = document.getElementById("themecontrol");
+
+  console.log(Mode);
+  switch (Mode) {
+    case "dark":
+      body.style.transition = "1s";
+
+      body.style.transitionDelay = "0.1s";
+      body.style.background = "url(./images/DarkBackground.png)";
+      body.style.backgroundSize = "cover";
+      localStorage.setItem("Mode", mode);
+      themecontrol.checked = localStorage.getItem("check");
+      return mode;
+    case "light":
+      body.style.transition = "2s";
+
+      body.style.transitionDelay = "0.1s";
+      body.style.background = "url(./images/background.jpg)";
+      body.style.backgroundSize = "cover";
+      localStorage.setItem("Mode", mode);
+      themecontrol.checked = localStorage.getItem("check");
+
+      return mode;
+    default:
+      body.style.transition = "2s";
+
+      body.style.transitionDelay = "0.1s";
+      body.style.background = "url(./images/background.jpg)";
+      body.style.backgroundSize = "cover";
+  }
+}
+oldTheme();
