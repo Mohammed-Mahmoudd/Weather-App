@@ -105,17 +105,17 @@ function theme() {
     case "dark":
       body.style.transition = "1s";
       body.style.transitionDelay = "0.1s";
-      body.style.background = "url(../images/DarkBackground.png)";
+      body.style.background = "url(./images/DarkBackground.png)";
       body.style.backgroundSize = "cover";
       break;
     case "light":
       body.style.transition = "2s";
       body.style.transitionDelay = "0.1s";
-      body.style.background = "url(../images/background.jpg)";
+      body.style.background = "url(./images/background.jpg)";
       body.style.backgroundSize = "cover";
       break;
     default:
-      body.style.background = "url(../images/background.jpg)";
+      body.style.background = "url(./images/background.jpg)";
       body.style.backgroundSize = "cover";
       body.style.transition = "0.1s";
       break;
