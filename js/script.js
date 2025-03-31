@@ -82,7 +82,7 @@ function displayData(data) {
 
   // Height Transition
   input.addEventListener("focusout", () => {
-    container.style.height = "600px";
+    container.style.height = "620px";
   });
   input.addEventListener("focusin", () => {
     container.style.height = "90px";
