@@ -22,8 +22,8 @@ A sleek and interactive weather application that fetches real-time weather data 
 
 ## Screenshots
 
-![Weather App Screenshot](darkMode%20.png)
-![Weather App Screenshot](lightMode%20.png)
+![Weather App Screenshot](darkMode.png)
+![Weather App Screenshot](lightMode.png)
 
 ## Author
 
